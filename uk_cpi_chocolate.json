@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/sandalaft/sandalaft.github.io/refs/heads/main/uk_cpi_chocolate.csv"
+  },
+  "title": {"text": "Chocolate CPI (2015=100)"},
+  "width": 300,
+  "height": 300,
+  "mark": {"type": "line", "color": "green"},
+  "encoding": {
+    "x": {"field": "date", "title": "Time (in years)", "type": "temporal"},
+    "y": {"field": "value", "title": "Index", "type": "quantitative"}
+  },
+  "config": {}
+}
