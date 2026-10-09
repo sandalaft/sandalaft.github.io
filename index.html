@@ -82,6 +82,19 @@
         <figure id="figure_02"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
+    <!-- Section 3 -->
+
+    <section>
+        <div class="chart-description">
+            <h2>Section 3: UK inflation</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Inflation is the United Kingdom is measured by the Office for National Statistics (ONS) using the Consumer Prices Index (CPI).
+                The CPI measures the average change in prices of a basket of goods and services over time.
+                The ONS collects data on prices from various sources, including retailers, service providers, and online platforms.
+            </p>
+        </div>
+        <figure id="figure_03"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -102,6 +115,9 @@
 
         let figure_2_spec = "wk1_chart2.json"; // We're storing the URL of the graph we want to display in a variable
         vegaEmbed('#figure_02', figure_2_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+
+        let figure_3_spec = "wk2_chart1.json"; // We're storing the URL of the graph we want to display in a variable
+        vegaEmbed('#figure_03', figure_3_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_3
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
